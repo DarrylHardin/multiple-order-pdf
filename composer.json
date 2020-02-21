@@ -1,0 +1,43 @@
+{
+    "name": "importantcoding/multiple-order-pdf",
+    "description": "Put multiple selected orders on a single PDF page, the order will be pushed to next page if page break would split.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "multiple order pdf"
+    ],
+    "support": {
+        "docs": "https://github.com/github.com/importantcoding/multiple-order-pdf/blob/master/README.md",
+        "issues": "https://github.com/github.com/importantcoding/multiple-order-pdf/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "importantcoding",
+            "homepage": "https://importantcoding.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "importantcoding\\multipleorderpdf\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Multiple Order PDF",
+        "handle": "multiple-order-pdf",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/github.com/importantcoding/multiple-order-pdf/master/CHANGELOG.md",
+        "components": {
+            "multipleOrderPdfService": "importantcoding\\multipleorderpdf\\services\\MultipleOrderPdfService"
+        },
+        "class": "importantcoding\\multipleorderpdf\\MultipleOrderPdf"
+    }
+}
